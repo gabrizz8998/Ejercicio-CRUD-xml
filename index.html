@@ -7,7 +7,6 @@
   <meta name="keywords" content="HTML5, CSS3, JavaScript">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <link rel="shortcut icon" href="./imagenes/Logo.png">
   <title>Plantilla</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="datos.js"></script> 
@@ -26,10 +25,10 @@
       <label for="menuopciones"> ☰ </label>    
       <ul>
         <li id="bGrabar">Grabar</li>
-        <li id="bModificar" onclick="modificarRegistro()">Modificar</li>
-        <li id="bBorrar" onclick="borrarRegistro()">Borrar</li>
-        <li id="bSiguiente" onclick="siguienteRegistro()">Siguiente</li>
-        <li id="bAnterior" onclick="anteriorRegistro()">Anterior</li>
+        <li id="bModificar">Modificar</li>
+        <li id="bBorrar">Borrar</li>
+        <li id="bSiguiente">Siguiente</li>
+        <li id="bAnterior">Anterior</li>
         <li id="bTabla">Tabla</li>
       </ul>
 
@@ -46,41 +45,39 @@
         <body>
           <table  style="width: 100%">
             <tr>
-              <td style="width: 146px">ISBN</td>
+              <td style="width: 146px">Nombre del puente</td>
               <td>
       
-                <input id="iISBN" type="text" style="width: 257px" value=""/>
+                <input id="Nombre" type="text" style="width: 257px" value=""/>
               </td>
             </tr>
             <tr>
-              <td style="width: 146px; height: 26px;">Titulo</td>
+              <td style="width: 146px; height: 26px;">Calle</td>
       
               <td style="height: 26px">
       
-                <input id="Titulo" type="text" style="width: 377px"/>
+                <input id="Calle" type="text" style="width: 377px"/>
               </td>
             </tr>
             <tr>
-              <td style="width: 146px">Autor&nbsp;</td>
+              <td style="width: 146px">Latitud</td>
               <td>
       
-                <input id="Autor" type="text" style="width: 241px; height: 19px;" />
+                <input id="Latitud" type="text" style="width: 241px; height: 19px;" />
               </td>
             </tr>
       
             <tr>
-              <td style="width: 146px">Editorial</td>
+              <td style="width: 146px">Longitud</td>
               <td>
       
-                <input id="Editorial" type="text" style="width: 155px" />
+                <input id="Longitud" type="text" style="width: 155px" />
               </td>
             </tr>
             <tr>
-              <td style="width: 146px">Número de Paginas</td>
+              <td style="width: 146px">Imágen</td>
               <td>
-      
-      
-                <input id="Paginas" type="text" style="width: 158px" />
+                <img id="Imagen" src="imagenes\puente.JPG" style="width:100px; height: 100px;"></img>
               </td>
             </tr>
             <tr>
@@ -107,11 +104,10 @@
         <table id="tabla" class="tablaLibros">
           <tbody id="cuerpo">
             <tr>
-              <td style="height: 25px">ISBN</td>
-              <td style="height: 25px">TITULO</td>
-              <td style="height: 25px">AUTOR</td>
-              <td style="width: 482px; height: 25px;">EDITORIAL</td>
-              <td style="height: 25px">Nº DE PAGINAS</td>
+              <td style="height: 25px;width: 30%;">Nombre</td>
+              <td style="height: 25px;width: 40%;">Calle</td>
+              <td style="height: 25px;width: 15%;">Longitud</td>
+              <td style="height: 25px;width: 15%;">Latitud</td>
             </tr>
           </tbody>
           </table>
