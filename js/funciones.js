@@ -47,7 +47,7 @@ function grabar() {
     var Calle = document.getElementById("Calle").value;
     var Latitud = document.getElementById("Latitud").value;
     var Longitud = document.getElementById("Longitud").value;
-    var URL = document.getElementById("Imagen").value;
+    var URL = document.getElementById("Url").value;
 
     puente = new datospuente(Nombre, Calle, Latitud, Longitud, URL);
     puente.guarda();
@@ -60,7 +60,7 @@ function modificar() {
     var Calle = document.getElementById("Calle").value;
     var Latitud = document.getElementById("Latitud").value;
     var Longitud = document.getElementById("Longitud").value;
-    var URL = document.getElementById("Imagen").value;
+    var URL = document.getElementById("Url").value;
     puente = new datospuente(Nombre, Calle, Latitud, Longitud, URL);
     datos[pos] = puente;
 }
@@ -141,6 +141,7 @@ function visualiza(pos) {
     document.getElementById("Latitud").value = puente.Latitud;
     document.getElementById("Longitud").value = puente.Longitud;
     imagen.src =puente.URL;
+    document.getElementById("Url").value =puente.URL;
 }
 
 
